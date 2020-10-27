@@ -1,3 +1,29 @@
+## 6.0.0 - August 2020
+#### Az.Accounts
+* [Breaking Change] Removed 'Get-AzProfile' and 'Select-AzProfile'
+* Replaced Azure Directory Authentication Library with Microsoft Authentication Library(MSAL)
+
+#### Az.DataLakeStore
+* Added breaking change description for 'Export-AzDataLakeStoreItem' and 'Import-AzDataLakeStoreItem'
+* Added option of Byte encoding for 'New-AzDataLakeStoreItem', 'Add-AzDAtaLakeStoreItemContent', and 'Get-AzDAtaLakeStoreItemContent'
+
+#### Az.Resources
+* Fixed parsing bug
+* Updated ARM template What-If cmdlets to remove preview message from results
+* Fixed an issue where template deployment cmdlets crash if '-WhatIf' is set at a higher scope [#13038]
+* Fixed an issue where template deployment cmdlets does not preserve case for template parameters
+* Added a default API version to be used in 'Export-AzResourceGroup' cmdlet
+* Added cmdlets for Template Specs ('Get-AzTemplateSpec', 'Set-AzTemplateSpec', 'New-AzTemplateSpec', 'Remove-AzTemplateSpec', 'Export-AzTemplateSpec')
+* Added support for deploying Template Specs using existing deployment cmdlets (via the new -TemplateSpecId parameter) 
+* Updated 'Get-AzResourceGroupDeploymentOperation' to use the SDK.
+* Removed '-ApiVersion' parameter from '*-AzDeployment' cmdlets.
+
+#### Az.Sql
+* Added DiffBackupIntervalInHours to 'Set-AzSqlDatabaseBackupShortTermRetentionPolicy' 
+* Fixed issue where New-AzSqlDatabaseExport fails if networkIsolation not specified [#13097]
+* Fixed issue where New-AzSqlDatabaseExport and New-AzSqlDatabaseImport were not returning OperationStatusLink in the result object [#13097]
+* Update Azure Paired Regions URL in Backup Storage Redundancy Warnings 
+
 ## 5.0.0 - October 2020
 #### Az.Accounts
 * [Breaking Change] Removed 'Get-AzProfile' and 'Select-AzProfile'

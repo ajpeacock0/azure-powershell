@@ -18,6 +18,8 @@
         - Additional information about change #1
 -->
 ## Upcoming Release
+
+## Version 0.1.0
 * Fixed null reference and method case insensitive in `Invoke-AzRestMethod`
 
 ## Version 2.1.0

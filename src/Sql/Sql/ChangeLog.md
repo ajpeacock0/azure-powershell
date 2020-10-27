@@ -18,6 +18,8 @@
         - Additional information about change #1
 -->
 ## Upcoming Release
+
+## Version 0.1.0
 * Fixed issues where Set-AzSqlDatabaseAudit were not support Hyperscale database and database edition cannot be determined
 
 ## Version 2.11.1
